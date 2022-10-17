@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  *  main - Entry point
  *
@@ -6,16 +7,16 @@
  */
 int main(void)
 {
-	char a;
-	int b;
-	long int c;
-	long long int d;
-	float e;
+	int a = sizeof(char);
+	int b = sizeof(int);
+	long int c = sizeof(long int);
+	long long int d = sizeof(long long int)
+	float e = sizeof(float);
 
-	printf("Size of a char: %li byte(s)\n", (unsigned long)sizeof(a));
-	printf("Size of an int: %li byte(s)\n", (unsigned long)sizeof(b));
-	printf("Size of a long int: %li byte(s)\n", (unsigned long)sizeof(c));
-	printf("Size of a long long int: %li byte(s)\n", (unsigned long)sizeof(d));
-	printf("Size of a float %li byte(s)\n", (unsigned long)sizeof(e));
+	printf("Size of a char: %i byte(s)\n", a);
+	printf("Size of an int: %i byte(s)\n", b);
+	printf("Size of a long int: %i byte(s)\n", c);
+	printf("Size of a long long int: %i byte(s)\n", d);
+	printf("Size of a float %i byte(s)\n", e);
 	return (0);
 }
