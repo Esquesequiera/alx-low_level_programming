@@ -10,7 +10,7 @@ int main(void)
 	int a = sizeof(char);
 	int b = sizeof(int);
 	int c = sizeof(long int);
-	int d = sizeof(long long int)
+	int d = sizeof(long long int);
 	int f = sizeof(float);
 
 	printf("Size of a char: %i byte(s)\n", a);
