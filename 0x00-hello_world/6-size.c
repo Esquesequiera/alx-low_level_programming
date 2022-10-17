@@ -9,9 +9,9 @@ int main(void)
 {
 	int a = sizeof(char);
 	int b = sizeof(int);
-	long int c = sizeof(long int);
-	long long int d = sizeof(long long int)
-	float e = sizeof(float);
+	int c = sizeof(long int);
+	int d = sizeof(long long int)
+	int e = sizeof(float);
 
 	printf("Size of a char: %i byte(s)\n", a);
 	printf("Size of an int: %i byte(s)\n", b);
