@@ -1,6 +1,6 @@
 #include<stdio.h>
-#include<stdio.h>
-#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 
 /**
  * main - Randomn positive and negative number
@@ -20,4 +20,4 @@ int main(void)
 	else
 		printf("%d is zero\n", n);
 	return (0);
-i}
+}
