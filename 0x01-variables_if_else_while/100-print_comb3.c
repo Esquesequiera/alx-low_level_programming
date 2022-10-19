@@ -12,9 +12,9 @@ int main(void)
 	x = '0';
 	y = '0';
 
-	for (x = '0'; x <= '9'; x++)/* this are the ones digits*/
+	for (y = '0'; y <= '9'; y++)/* this are the ones digits*/
 	{
-		for (y = '0'; y <= '9'; y++)
+		for (x = '0'; x <= '9'; x++)
 		{
 			if (!((x == Y) || (y > x)))
 			{
