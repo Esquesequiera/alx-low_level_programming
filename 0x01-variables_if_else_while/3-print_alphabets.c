@@ -9,7 +9,10 @@ int main(void)
 {
 	int c;
 
-	while ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	c = 'a';
+	c = 'A';
+
+	while (c <= 'z' && c <= 'Z')
 	{
 		putchar(c);
 		c++;
