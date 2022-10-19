@@ -14,7 +14,7 @@ int main(void)
 
 	for (x = '0'; x <= '9'; x++)/* this are the ones digits*/
 	{
-		for y = (y = '0'; y <= '9'; y++)
+		for (y = '0'; y <= '9'; y++)
 		{
 			if (!((x == Y) || (y > x)))
 			{
