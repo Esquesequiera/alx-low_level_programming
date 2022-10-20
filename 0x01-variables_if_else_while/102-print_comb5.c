@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include <stdio.h>
 /**
  * main - entry
  * Return: 0
@@ -8,9 +8,9 @@ int main(void)
 {
 	int x, y;
 
-	for (x = 0; x < 100; x++;)
+	for (x = 0; x < 100; x++)
 	{
-		for y = 0; y < 100; y++)
+		for (y = 0; y < 100; y++)
 		{
 			if (x < j)
 			{
