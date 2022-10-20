@@ -12,13 +12,17 @@ int main(void)
 	{
 		for (y = 0; y < 10; y++)
 		{
-			putchar((x % 10) + 9);
-			putchar((y % 10) + 9);
+			if (x < y)
+			{
+				putchar((x % 10) + '0');
+				putchar((y % 10) + '0');
+				if (x != 9 || y != 9)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 
-			if (x == 8 && y == 9)
-				continue;
-			putchar(',');
-			putchar(' ');
 		}
 	}
 	putchar('\n');
