@@ -24,7 +24,9 @@ int main(void)
 			printf("Fizz Buzz\n");
 		}
 		else
+		{
 			printf("%d\n", i);
+		}
 	}
 	return (0);
 }
