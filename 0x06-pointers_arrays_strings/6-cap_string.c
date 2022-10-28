@@ -15,6 +15,7 @@ char *cap_string(char *str)
 	{
 		if (!(str[i] >= 'a' && str[i] <= 'z'))
 		{
+			str[i];
 			i++;
 		}
 		for (j = 0; j <= 12; j++)
