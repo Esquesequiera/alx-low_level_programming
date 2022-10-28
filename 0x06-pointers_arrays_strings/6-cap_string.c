@@ -16,7 +16,7 @@ char *cap_string(char *n)
 	{
 		if (n[i] >= 'a' && n[i] <= 'z')
 		{
-			n[i] = n[i] - cap
+			n[i] = n[i] - cap;
 		}
 
 		cap = 0;
