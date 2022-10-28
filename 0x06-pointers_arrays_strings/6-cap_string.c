@@ -10,6 +10,7 @@ char *cap_string(char *str)
 {
 	int i, j;
 	int k[] = {' ', ',', ':', '.', '?', '"', '(', ')', '{', '}', '\n', '\t'};
+	int cap = 32;
 
 	for (i = 0; str[i] != '\n'; str++)
 	{
@@ -18,12 +19,13 @@ char *cap_string(char *str)
 			str[i] = str[i] - 32;
 			i++;
 		}
+
 		for (j = 0; j <= 12; j++)
 		{
 			if (str[i] == k[j])
 			{
 				j = 12;
-				str[i] -= 32;
+				cap = 32;
 			}
 		}
 	}
