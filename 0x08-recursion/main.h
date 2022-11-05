@@ -10,6 +10,7 @@ int is_prime_number(int n);
 int _putchar(char c);
 int is_divisible(int num, int div);
 int is_palindrome(char *s);
+#include <stdio.h>
 
 
 
