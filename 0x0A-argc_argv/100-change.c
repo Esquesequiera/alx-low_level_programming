@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (0);
+		return (1);
 	}
 
 	total = atoi(argv[1]);/*convert str to int*/
@@ -28,4 +28,18 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
+	/*Declaring while*/
+
+	while (coins[position] != '\0')
+	{
+		if (total >= coins[position])
+		{
+			aux = (total / coins[position]);
+			change += aux;
+			total -= coins[position] * aux;
+		}
+		position++;
+	}
+	printf("%d\n", change);
+	return (0);
 }
