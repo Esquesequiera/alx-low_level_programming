@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	(void) argv; /*ignore argv*/
-	prntf("%i\n", arg - 1);
+	prntf("%i\n", argc - 1);
 
 	return (0);
 }
