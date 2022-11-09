@@ -1,1 +1,1 @@
-Create the static library libmy.a
+Creating my own Static library
