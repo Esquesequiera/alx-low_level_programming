@@ -1,11 +1,13 @@
 #include "3-calc.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main - return result of desired calculation from command line options
  * @argc: number of command line arguments
  * @argv: array of command line arguments
  *
- * Return: Always 0 (Success)
+ * Return: EXIT_FAILURE if unsuccessful or EXIT_SUCCESS if success.
  */
 
 int main(int argc, char *argv[])
@@ -27,20 +29,15 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-	func = get_op_func(argv[2]);
+	op_func = get_op_func(operator);
 
-	if (!func)
+	if (op_func == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if ((operator[0] == '/' || operator[0] == '%') && num2 == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
 	calc = op_func(num1, num2);
 	printf("%d\n", calc);
 
-	return (0);
+	exit(EXIT_SUCCESS);
 }
